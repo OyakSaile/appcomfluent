@@ -1,0 +1,93 @@
+:root {
+  --primary: #003f87;
+  --white: #fff;
+  --grey: #444;
+}
+.processoConteudo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.modal {
+  background-color: aliceblue;
+  max-width: 800px;
+  min-width: 200px;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.modal i {
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.modal h2 {
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.modal p {
+  font-size: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.checkbox button {
+  font-size: 1rem;
+  border: 1px solid var(--grey);
+  color: var(--grey);
+  background-color: transparent;
+  padding: 1.5rem;
+  border-radius: 6px;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.checkbox .active {
+  border: 1px solid var(--white);
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.botaoDePasso {
+  border: 0;
+  padding: 0.8rem 1.5rem;
+  margin: 2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  width: 15rem;
+  transition: filter 0.2s;
+}
+
+.botaoDePasso:hover {
+  filter: brightness(0.8);
+}
+
+.proximo {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.voltar {
+  background: transparent;
+  border: 1px solid var(--grey);
+  color: var(--grey);
+}
